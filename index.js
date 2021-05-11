@@ -6,4 +6,10 @@ const allClearButton = document.querySelector('[data-all-clear]');
 
 const previousOperandTextElement = document.querySelector('[data-previous-operand]');
 const currentOperandTextElement = document.querySelector('[data-current-operand]');
-console.log(allClearButton);
+//console.log(allClearButton);
+
+numberButtons.forEach((button) => {
+    button.addEventListener("click", function(){
+        console.log(button.innerText);
+    })
+})
